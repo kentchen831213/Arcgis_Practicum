@@ -1,0 +1,13 @@
+﻿ObjectID,GlobalID,Initials,CollDate,FieldCrew,SiteName,County,Comment_OpenText,WindSpeed,CloudCover,HabitatType,eDNA_Smpl,RandomNum_ID,Number of ticks found,SampleID,eDNA_SmplID,Coord_X,Coord_Y,RecCheck
+1,6622b5e3-7f68-4c8e-9f87-a0cee224fd26,JT,6/1/2021,"Lee,Tinoco,Kopsco,Uruchima",LamczykProperty,Jefferson,Its on & on drizzling ,Calm,OVC,Gr,,,0,,,-88.9756348,38.3032935,
+2,aeae89b0-f6ba-45d5-9222-abd140dc100c,JT,6/1/2021,"Lee,Uruchima,Tinoco,Kopsco",LamczykProperty,Jefferson,It was a slight drizzle,Calm,OVC,TE,,,0,,,-88.9734565,38.3032983,
+3,640bdc50-0d9d-487c-9a67-6c9bc9fe216d,JT,6/1/2021,"Lee,Tinoco,Kopsco,Uruchima",LamczykProperty,Jefferson,Pretty wet out. Mud. ,Calm,OVC,For,"eDNA_sample,Blank",,0,,JX4,-88.9753497,38.3016541,
+4,45fb6f01-ed48-4e61-ae7b-bfcd09354b2a,HK,6/1/2021,"Kopsco,Tinoco,Lee,Uruchima",ArrowheadLake,Williamson,EDNA collected only due to rain ,Calm,OVC,TE,"eDNA_sample,Blank",,0,,PQ7,-88.90801863,37.82691461,
+5,1c003d8d-40c6-4530-8d15-e4b5abfb4cd2,JT,6/1/2021,"Tinoco,Uruchima",ArrowheadLake,Williamson,Very muddy. ,Calm,OVC,TE,,,0,,,-88.9079984,37.8269417,
+6,51d06839-5189-46f9-9a51-dc6221ccff20,JT,6/1/2021,"Kopsco,Uruchima,Tinoco,Lee",ArrowheadLake,Williamson,Very wet. Some areas were flooded/swamp-like,Calm,OVC,Gr,,,0,,,-88.9136472,37.8295959,
+7,2094141f-edb1-4408-8e59-de639c9f9b33,JT,6/1/2021,"Kopsco,Uruchima,Tinoco,Lee",DixonSprings,Pope,"1 Lone Star 
+2 American Dog Tick",Calm,OVC,TE,,,3,,,-88.666266,37.4278455,
+8,f43f98f1-36ad-4465-b330-246811038f6c,HK,6/1/2021,"Kopsco,Tinoco,Lee,Uruchima",DixonSprings,Pope,,Light breeze,BKN,Gr,"eDNA_sample,Blank",,2,,FR6,-88.67130537,37.4275339,
+9,a06f5948-25c4-4aec-b301-fb04aa93cb5f,JT,6/1/2021,"Kopsco,Uruchima,Tinoco,Lee",CrabOrchard,Williamson,"4 lonestar (f)
+6 lonestar (m)
+1 american dog tick (m)",Calm,OVC,TE,,,11,,,-89.0260955,37.7157687,
