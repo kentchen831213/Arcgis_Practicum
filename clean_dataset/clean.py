@@ -90,4 +90,13 @@ HabitatType_map = {'Maintained forest': 'For',
                    'unmaintained forest': 'UF'
                    }
 # do the remapping
-df_clean['HabitatType'] = df['HabitatType'].replace(HabitatType_map)
+df_clean['Habitat'] = df['HabitatType'].replace(HabitatType_map)
+
+#%%
+# rename and copy column
+df_clean[['eDNA_Smpl', 'RandomNum_ID', 'NumTicks', 'SampleID', 'eDNA_SmplID', 'Coord_X', 'Coord_Y', 'RecCheck']] =\
+    df[['Select one or both', 'RandomNum_ID', 'Number of ticks found', 'SampleID', 'eDNA_SmplID', 'x', 'y', 'RecCheck']]
+# change data type of NumTicks from float to int
+df_clean['NumTicks'].fillna(0, inplace=True)
+df_clean = df_clean.astype({'NumTicks': 'int32'})
+
