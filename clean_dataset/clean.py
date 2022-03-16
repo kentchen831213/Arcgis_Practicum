@@ -100,3 +100,8 @@ df_clean[['eDNA_Smpl', 'RandomNum_ID', 'NumTicks', 'SampleID', 'eDNA_SmplID', 'C
 df_clean['NumTicks'].fillna(0, inplace=True)
 df_clean = df_clean.astype({'NumTicks': 'int32'})
 
+#%%
+# combine multiple sites columns into one
+df_clean['SiteName'] = df['SitesChampaignCo'].fillna('') + df['SiteFordCo'].fillna('') + df['SitesHamiltonCo'].fillna('')\
++ df['SitesJacksonCo'].fillna('') + df['SitesJeffersonCo'].fillna('') + df['SitesPerryCo'].fillna('')\
++ df['SitesPopeCo'].fillna('') + df['SitesWilliamsonCo'].fillna('') + df['Other - SiteName'].fillna('')
