@@ -80,3 +80,14 @@ cloud_map = {'Sky_clear': 'SKC',
              }
 # do the remapping
 df_clean['CloudCover'] = df['CloudCover'].replace(cloud_map)
+
+#%%
+# adjust Habitat Type column.
+# prepare dictionary for mapping
+HabitatType_map = {'Maintained forest': 'For',
+                   'TransitionalEcotone': 'ecotone',
+                   'Grassland': 'Gr',
+                   'unmaintained forest': 'UF'
+                   }
+# do the remapping
+df_clean['HabitatType'] = df['HabitatType'].replace(HabitatType_map)
