@@ -49,7 +49,13 @@ for idx, row in enumerate(csvreader):
 #%%
 df = pd.read_csv('./clean_dataset/DragPts_eDNA28May21_OriginalExport.csv', skiprows=1)
 print(df)
-# change Wind speed column to shorten description.
+# adjust Wind speed column.
+"""
+dictionary for the mapping of description: 
+When there is a new values for survey 123
+1. add comma to the last row of the dictionary ex: 'House_dropping _on_ruby_slippers': 'Strong Breeze', <= comma
+2. add 'original':'new description' to a new row
+"""
 wind_map = {'Smoke_rises_vertically_calm': 'Calm',
             'Smoke_drifts_slightly_light_air': 'Light Air',
             'Leaves_rustle_light_breeze': 'Light Breeze',
@@ -58,5 +64,19 @@ wind_map = {'Smoke_rises_vertically_calm': 'Calm',
             'Sm_trees_sway_fresh_breeze': 'Fresh Breeze',
             'House_dropping _on_ruby_slippers': 'Strong Breeze'
             }
+# claim a structure to save cleaned data
 df_clean = pd.DataFrame()
+# do the remapping
 df_clean['WindSpeed'] = df['WindSpeed'].replace(wind_map)
+
+#%%
+# adjust Cloud Color column.
+# prepare dictionary for mapping
+cloud_map = {'Sky_clear': 'SKC',
+             'Few_clouds': 'FEW',
+             'Scattered_clouds': 'SCT',
+             'Broken_>1_2_cloud_cover':	'BKN',
+             'Overcast': 'OVC'
+             }
+# do the remapping
+df_clean['CloudCover'] = df['CloudCover'].replace(cloud_map)
