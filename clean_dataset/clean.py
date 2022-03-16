@@ -105,3 +105,7 @@ df_clean = df_clean.astype({'NumTicks': 'int32'})
 df_clean['SiteName'] = df['SitesChampaignCo'].fillna('') + df['SiteFordCo'].fillna('') + df['SitesHamiltonCo'].fillna('')\
 + df['SitesJacksonCo'].fillna('') + df['SitesJeffersonCo'].fillna('') + df['SitesPerryCo'].fillna('')\
 + df['SitesPopeCo'].fillna('') + df['SitesWilliamsonCo'].fillna('') + df['Other - SiteName'].fillna('')
+
+#%%
+# write to cav file
+df_clean.to_csv('./clean_dataset/cleaned.csv', index=False)
